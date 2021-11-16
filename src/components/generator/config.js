@@ -15,6 +15,29 @@ export const formConf = {
 // 输入型组件 【左面板】
 export const inputComponents = [
   {
+    __config__: {
+      label: 'test',
+      // showLabel: true,
+      // changeTag: true,
+      labelWidth: null,
+      tag: 'test',
+      tagIcon: 'button',
+      span: 24,
+      layout: 'colFormItem'
+      // document: 'https://element.eleme.cn/#/zh-CN/component/button'
+    },
+    __slot__: {
+      // default: '主要按钮'
+    }
+    // type: 'primary',
+    // icon: 'el-icon-search',
+    // round: false,
+    // size: 'medium',
+    // plain: false,
+    // circle: false,
+    // disabled: false
+  },
+  {
     // 组件的自定义配置
     __config__: {
       label: '单行文本',

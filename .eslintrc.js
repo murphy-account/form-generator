@@ -3,7 +3,11 @@ module.exports = {
   env: {
     node: true
   },
-  extends: ['plugin:vue/recommended', 'eslint:recommended', 'airbnb-base'],
+  extends: [
+    'plugin:vue/recommended', 
+    // 'eslint:recommended', 
+    // 'airbnb-base'
+  ],
   rules: {
     'linebreak-style': 0,
     'no-console': 'off',

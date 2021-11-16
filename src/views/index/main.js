@@ -5,7 +5,8 @@ import '@/styles/index.scss'
 import '@/icons'
 import axios from 'axios'
 import Tinymce from '@/components/tinymce/index.vue'
-
+import test from '@/components/test/index.vue'
+Vue.component('test', test)
 Vue.component('tinymce', Tinymce)
 
 Vue.config.productionTip = false

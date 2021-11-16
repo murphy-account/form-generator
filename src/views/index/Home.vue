@@ -51,7 +51,7 @@
           查看json
         </el-button>
         <el-button icon="el-icon-download" type="text" @click="download">
-          导出vue文件
+          查看vue文件
         </el-button>
         <el-button class="copy-btn-main" icon="el-icon-document-copy" type="text" @click="copy">
           复制代码
@@ -109,6 +109,11 @@
       :visible.sync="jsonDrawerVisible"
       :json-str="JSON.stringify(formData)"
       @refresh="refreshJson"
+    />
+    <json-drawer
+      size="60%"
+      :visible.sync="vueDrawerVisible"
+      :json-str="JSON.stringify(codeStr)"
     />
     <code-type-dialog
       :visible.sync="dialogVisible"
@@ -181,8 +186,10 @@ export default {
       activeId: drawingDefalut[0].formId,
       drawerVisible: false,
       formData: {},
+      codeStr: '',
       dialogVisible: false,
       jsonDrawerVisible: false,
+      vueDrawerVisible: false,
       generateConf: null,
       showFileName: false,
       activeData: drawingDefalut[0],
@@ -370,8 +377,9 @@ export default {
     },
     execDownload(data) {
       const codeStr = this.generateCode()
-      const blob = new Blob([codeStr], { type: 'text/plain;charset=utf-8' })
-      saveAs(blob, data.fileName)
+      console.log('codeStr',codeStr)
+      // const blob = new Blob([codeStr], { type: 'text/plain;charset=utf-8' })
+      // saveAs(blob, data.fileName)
     },
     execCopy(data) {
       document.getElementById('copyNode').click()
@@ -412,9 +420,9 @@ export default {
       this.jsonDrawerVisible = true
     },
     download() {
-      this.dialogVisible = true
-      this.showFileName = true
-      this.operationType = 'download'
+      this.vueDrawerVisible = true
+      this.codeStr = '<template><div>123<div></template>'
+      // this.operationType = 'download'
     },
     run() {
       this.dialogVisible = true

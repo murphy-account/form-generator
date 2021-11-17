@@ -11,7 +11,61 @@ export const formConf = {
   span: 24,
   formBtns: true
 }
-
+// RW组件
+export const RWComponents = [ 
+  {
+    __config__: {
+      label: 'RwCardTitle',
+      showLabel: false,
+      tag: 'RwCardTitle',
+      tagIcon: 'button',
+      span: 24,
+      layout: 'colFormItem'
+    },
+    __slot__: {
+      // default: '主要按钮'
+    },
+    title: null
+  },
+  {
+    __config__: {
+      label: 'RWEchart',
+      showLabel: false,
+      tag: 'RWEchart',
+      tagIcon: 'button',
+      span: 24,
+      layout: 'colFormItem'
+    },
+    __slot__: {
+      // default: '主要按钮'
+    },
+    data:[
+      {
+          "X": "123", 
+          "Y": 12
+      }, 
+      {
+          "X": "123", 
+          "Y": 12
+      }
+    ]
+  }
+]
+// 表格组件
+export const tableComponents = [
+  {
+    __config__: {
+      label: 'test',
+      labelWidth: null,
+      tag: 'test',
+      tagIcon: 'button',
+      span: 24,
+      layout: 'colFormItem'
+    },
+    __slot__: {
+    }
+  }
+]
 // 输入型组件 【左面板】
 export const inputComponents = [
   {

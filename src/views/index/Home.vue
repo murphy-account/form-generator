@@ -3,10 +3,10 @@
     <div class="left-board">
       <div class="logo-wrapper">
         <div class="logo">
-          <img :src="logo" alt="logo"> Form Generator
+          <!-- <img :src="logo" alt="logo"> Form Generator
           <a class="github" href="https://github.com/JakHuang/form-generator" target="_blank">
             <img src="https://github.githubassets.com/pinned-octocat.svg" alt>
-          </a>
+          </a> -->
         </div>
       </div>
       <el-scrollbar class="left-scrollbar">
@@ -47,9 +47,9 @@
         <el-button icon="el-icon-video-play" type="text" @click="run">
           运行
         </el-button>
-        <el-button icon="el-icon-view" type="text" @click="showJson">
+        <!-- <el-button icon="el-icon-view" type="text" @click="showJson">
           查看json
-        </el-button>
+        </el-button> -->
         <el-button icon="el-icon-download" type="text" @click="download">
           查看vue文件
         </el-button>
@@ -68,7 +68,7 @@
             :disabled="formConf.disabled"
             :label-width="formConf.labelWidth + 'px'"
           >
-            <draggable class="drawing-board" :list="drawingList" :animation="340" group="componentsGroup">
+            <draggable class="drawing-board theme-dark" :list="drawingList" :animation="340" group="componentsGroup">
               <draggable-item
                 v-for="(item, index) in drawingList"
                 :key="item.renderKey"
@@ -110,11 +110,16 @@
       :json-str="JSON.stringify(formData)"
       @refresh="refreshJson"
     />
-    <json-drawer
+    <vue-drawer
+      size="60%"
+      :visible.sync="vueDrawerVisible"
+      :json-str="codeStr"
+    />
+    <!-- <json-drawer
       size="60%"
       :visible.sync="vueDrawerVisible"
       :json-str="JSON.stringify(codeStr)"
-    />
+    /> -->
     <code-type-dialog
       :visible.sync="dialogVisible"
       title="选择生成类型"
@@ -135,7 +140,7 @@ import FormDrawer from './FormDrawer'
 import JsonDrawer from './JsonDrawer'
 import RightPanel from './RightPanel'
 import {
-  inputComponents, selectComponents, layoutComponents, formConf
+  RWComponents, tableComponents, inputComponents, selectComponents, layoutComponents, formConf
 } from '@/components/generator/config'
 import {
   exportDefault, beautifierConf, isNumberStr, titleCase, deepClone, isObjectObject
@@ -153,6 +158,7 @@ import {
   getDrawingList, saveDrawingList, getIdGlobal, saveIdGlobal, getFormConf
 } from '@/utils/db'
 import loadBeautifier from '@/utils/loadBeautifier'
+import VueDrawer from './vueDrawer.vue'
 
 let beautifier
 const emptyActiveData = { style: {}, autosize: {} }
@@ -170,7 +176,8 @@ export default {
     JsonDrawer,
     RightPanel,
     CodeTypeDialog,
-    DraggableItem
+    DraggableItem,
+    VueDrawer
   },
   data() {
     return {
@@ -178,6 +185,8 @@ export default {
       idGlobal,
       formConf,
       inputComponents,
+      RWComponents,
+      tableComponents,
       selectComponents,
       layoutComponents,
       labelWidth: 100,
@@ -196,6 +205,14 @@ export default {
       saveDrawingListDebounce: debounce(340, saveDrawingList),
       saveIdGlobalDebounce: debounce(340, saveIdGlobal),
       leftComponents: [
+        {
+          title: 'RW组件',
+          list: RWComponents
+        },
+        {
+          title: '表格配置',
+          list: tableComponents
+        },
         {
           title: '输入型组件',
           list: inputComponents
@@ -420,9 +437,15 @@ export default {
       this.jsonDrawerVisible = true
     },
     download() {
+      this.generateConf = { 
+      fileName: undefined,
+      type: "file"
+      }
+      this.codeStr = this.generateCode() // '<template><div>123<div></template>'
       this.vueDrawerVisible = true
-      this.codeStr = '<template><div>123<div></template>'
-      // this.operationType = 'download'
+      // this.dialogVisible = true
+      // this.showFileName = false
+      // this.operationType = 'download' 
     },
     run() {
       this.dialogVisible = true
@@ -475,4 +498,6 @@ export default {
 
 <style lang='scss'>
 @import '@/styles/home';
+@import '@/styles/dark';
+
 </style>

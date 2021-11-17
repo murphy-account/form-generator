@@ -40,6 +40,12 @@
           <el-form-item v-if="activeData.__config__.label!==undefined" label="标题">
             <el-input v-model="activeData.__config__.label" placeholder="请输入标题" @input="changeRenderKey" />
           </el-form-item>
+          <el-form-item v-if="activeData.title!==undefined" label="cardTitle">
+            <el-input v-model="activeData.title" placeholder="请输入cardTitle" @input="changeRenderKey" />
+          </el-form-item>
+          <el-form-item v-if="activeData.data!==undefined" label="data">
+            <el-button @click="aaaa">设置data,触发setOption</el-button>
+          </el-form-item>
           <el-form-item v-if="activeData.placeholder!==undefined" label="占位提示">
             <el-input v-model="activeData.placeholder" placeholder="请输入占位提示" @input="changeRenderKey" />
           </el-form-item>
@@ -968,6 +974,19 @@ export default {
       if (needRerenderList.includes(this.activeData.__config__.tag)) {
         this.activeData.__config__.renderKey = +new Date()
       }
+    },
+    aaaa() {
+      this.activeData.data = [
+      {
+          "X": "123", 
+          "Y": 12
+      }, 
+      {
+          "X": "456789", 
+          "Y": 12
+      }
+    ]
+      this.changeRenderKey()
     }
   }
 }

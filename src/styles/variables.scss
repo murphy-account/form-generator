@@ -1,0 +1,281 @@
+/* 改变主题色变量 */
+
+$--color-primary: #cd4c40;
+$--color-primary-light: #cc4c3f;
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+// @import "~element-ui/packages/theme-chalk/src/index";
+$stock-font-dark:#eee;
+$stock-font-light:#333;
+$border-color-dark: #363a45;
+$border-color-light: #dadde3;
+$background-color-dark:#31343e;
+$background-color-page-light:#fff;
+$background-color-page-dark:#151519;
+$background-color-theme-dark: #151519; //背景主题颜色默认
+$background-color-theme-light: #fff; //背景主题颜色默认
+$font-color-theme-dark:#eee;
+$font-color-theme-light: #333;
+$font-color-theme-tip-dark:#999;
+$font-color-theme-tip-light:#999;
+$font-color-link-dark:#5598DC;
+$font-color-link-light:#2582c9;
+$font-color-empty-tip-dark:#525869;
+$font-color-empty-tip-light:#ccc;
+//rw-header
+$background-color-header-dark: #151519; //背景主题颜色默认
+$background-color-header-light: #545c64; //背景主题颜色默认
+$font-color-header-dark:#33eeff;
+$font-color-header-light:#5598DC;
+//公告页面顶部tab
+$background-color-nav-dark:#202026;
+$background-color-nav-light:#fff;
+$background-color-nav-hover-light:#f5f8fa;
+$background-color-nav-active-dark:#464c5b;
+$background-color-nav-active-light:#dde0e7;
+$background-color-nav-active-line-dark:#d25145;
+$background-color-nav-active-line-light:#cc4c3f;
+$border-color-nav-dark:#31343b;
+$border-color-nav-light:#dadde3;
+$font-color-nav-dark:#c0c0c0;
+$font-color-nav-light:#666;
+$font-color-nav-active-dark:#fff;
+//菜单
+$background-color-menu-dark: #252830; //背景主题颜色默认
+$background-color-menu-light: #f5f8fa; //背景主题颜色默认
+$background-color-menu-hover-dark:#383b47;
+$background-color-menu-hover-light:#e6f0fb;
+$background-color-menu-active-dark:#30333d;
+$background-color-menu-active-light:#dadde3;
+$background-color-submenu-dark: #1d2027; //背景主题颜色默认
+$background-color-submenu-light: #ebeef1; //背景主题颜色默认
+$font-color-menu-dark:#fff;
+$font-color-menu-light:#666;
+$font-color-submenu-dark:#cb4c40;
+$font-color-submenu-light:#cc4c3f;
+//rw-table
+$background-color-scrollbar-light:#dcdcdc;
+$background-color-table-dark: #0d0f16;
+$background-color-table-light: #fff;
+$background-color-table-header-dark: #262a33;
+$background-color-table-header-light: #f1f1f1;
+$background-color-table-hover-light:#e6f0fa;
+$border-color-table-dark: #363a45;
+$border-color-table-light: #dadde3;
+$font-color-table-body-dark:#bcbfc4;
+$font-color-table-body-light:#666;
+$font-color-table-header-dark:#cbcbcb;
+$font-color-table-header-light:#666;
+$font-color-table-header-bg-dark:#b7bdcd;
+$font-color-table-header-bg-light:#cbcbcb;
+$background-color-loading-dark:rgba(0, 0, 0, 0.5);
+$background-color-loading-light:rgba(255, 255, 255, 0.5);
+$background-color-group-hover-dark:#4d525d;
+$background-color-group-hover-light:#e6f0fb;
+//input 
+$background-color-input-dark:#31343e;
+$background-color-input-light:#fff;
+$background-color-input-border-dark:#515562;
+$background-color-input-border-light:#dcdcdc;
+$font-color-input-dark:#fff;
+$font-color-input-light:#666;
+$border-color-input-focus-dark:#6d7285;
+$border-color-input-focus-light:#5598DC;
+$border-color-input-hover-dark:#464b58;
+$border-color-input-hover-light:#5598DC;
+$font-color-input-placeholder-dark:#999;
+$font-color-input-placeholder-light:#999;
+$background-color-button-info-dark:#585c6c;
+$background-color-button-info-light:#31343e;
+//DatePicker
+$background-color-date-dark:#282b35;
+$background-color-date-light:#f9f9f9;
+$background-color-date-sidebar-light:#eee;
+$border-color-date-dark:#14161c;
+$border-color-date-light:#DADDE3;
+$background-color-date-header-dark:#282b35;
+$background-color-date-header-light:#f9f9f9;
+$background-color-data-table-dark:#21242c;
+$background-color-data-table-light:#f9f9f9;
+$background-color-data-table-range-dark:#2a2e37;
+$background-color-data-table-disable-dark:#222;
+$background-color-data-table-range-light:#ecf2fa;
+$background-color-data-table-today-dark:#cd4c40;
+$background-color-data-table-today-light:#5598dc;
+$background-color-data-table-select-dark:#585c6c;
+$background-color-data-table-select-light:#585c6c;
+$background-color-data-table-hover-light:#e0ecfa;
+$font-color-date-dark:#fff;
+$font-color-date-light:#666;
+$font-color-date-row-dark:#666;
+$font-color-date-row-light:#999;
+$font-color-date-today-light:#fff;
+$font-color-date-row-available-dark:#9297ab;
+$font-color-date-row-available-light:#5598dc;
+$font-color-date-btn-icon-dark:#9297ab;
+$font-color-date-btn-icon-light:#666;
+//查询栏表单按钮
+$background-color-form-button-dark:#3f3f46;
+$background-color-form-button-light:#585c6c;
+$background-color-form-primary-button-dark:#585c6c;
+$background-color-form-primary-button-light:#cc4c3f;
+$font-color-form-button-dark:#fff;
+$font-color-form-button-light:#fff;
+$font-color-form-button-hover-dark:#6d7285;
+$font-color-form-button-hover-light:#6d7285;
+$font-color-form-button-active-dark:#464b58;
+$font-color-form-button-active-light:#484b58;
+$background-color-form-primary-button-hover-dark:#cd4c40;
+$background-color-form-primary-button-hover-light:#ed6255;
+$background-color-form-primary-button-active-dark:#b9473d;
+$background-color-form-primary-button-active-light:#b9473d;
+//el-select
+$border-color-select-dark:#515562;
+$border-color-select-light:#dcdcdc;
+$background-color-select-option-dark:#393d48;
+$background-color-select-option-light:#fff;
+$border-color-select-option-dark:#14161c;
+$border-color-select-option-light:#DADDE3;
+$font-color-select-option-dark:#b7bdcd;
+$font-color-select-option-light:#363A46;
+$font-color-select-option-hover-dark:#fff;
+$font-color-select-option-hover-light:#5598DC;
+$background-color-select-option-selected-dark:#4b505f;
+$background-color-select-option-selected-light:#5598DC;
+$font-color-select-arrow-dark:#585c6c;
+$font-color-select-arrow-light:#585c6c;
+$font-color-select-option--selected-light:#fff;
+$font-color-select-icon-light:#BCBCBC;
+//el-pagination
+$background-color-pagination-input-dark:#31343e;
+$background-color-pagination-input-light:#fff;
+$background-color-pagination-input-disabled-light:#e5e5e5;
+$border-color-pagination-input-dark:#515562;
+$border-color-pagination-input-light:#dadde3;
+$border-color-pagination-input-hover-light:#5598dc;
+$font-color-pagination-input-dark:#fff;
+$font-color-pagination-input-light:#666;
+$font-color-pagination-input-disabled-dark:#515562;
+$font-color-pagination-input-disabled-light:#999;
+$background-color-pagination-input-hover-dark:#515965;
+$background-color-pagination-input-hover-light:#e0ecf9;
+$background-color-pagination-input-active-dark:#5598dc;
+$background-color-pagination-input-active-light:#5598dc;
+$font-color-pagination-input-active-light:#fff;
+$font-color-pagination-text-dark:#666;
+$font-color-pagination-text-light:#666;
+//tooltip
+$background-color-tooltip-dark:#393d48;
+$background-color-tooltip-light:#fff;
+$font-color-tooltip-light:#666;
+$background-shadow-tooltip-light:#e3e3e3;
+//el-radio
+$background-color-el-radio-inner-dark:#666;
+$background-color-el-radio-inner-light:#666;
+$border-color-el-radio-inner-dark:#666;
+$border-color-el-radio-inner-light:#DADDE3;
+//el-radio-button
+$background-color-el-radio-button-inner-dark:#262a33;
+$background-color-el-radio-button-inner-light:#fff;
+$background-color-el-radio-button-inner-checked-dark:#6d7285;
+$background-color-el-radio-button-inner-checked-light:#5598dc;
+//el-tree
+$background-color-tree-dark:#282b35;
+$background-color-tree-light:#f5f8fa;
+$border-color-tree-dark:#14161c;
+$border-color-tree-light:#dadde3;
+$font-color-tree-dark:#b7bdcd;
+$font-color-tree-light:#666;
+$background-color-select-tree-light:#fff;
+$background-color-select-tree-btn-light:#5598dc;
+$background-color-select-tree-btn-hover-light:#6ea8e3;
+$background-color-select-tree-input-light:#eee;
+//checkbox
+$background-color-el-checkbox-inner-dark:#eee;
+$background-color-el-checkbox-inner-light:#eee;
+//el-tag
+$background-color-el-tag-dark:#4b505f;
+$background-color-el-tag-light:#fff;
+$font-color-el-tag-dark:#eee;
+$font-color-el-tag-light:#666;
+$border-color-el-tag-dark:#363a45;
+$border-color-el-tag-light:#fff;
+$font-color-table-tree-node-dark:#167CF3;
+$font-color-table-tree-node-light:#4485D1;
+//rw-chart-dialog
+$background-color-rw-chart-dialog-header-dark:#31343E;
+$background-color-rw-chart-dialog-header-light:#e5e5e5;
+$background-color-rw-chart-dialog-body-dark:#0d0f16;
+$background-color-rw-chart-dialog-body-light:#fff;
+$background-color-rw-chart-dialog-type-dark:#1A1B1F;
+$background-color-rw-chart-dialog-type-light:#fff;
+$background-color-rw-chart-dialog-type-active-dark:#525a65;
+$background-color-rw-chart-dialog-type-active-light:#e0ecfa;
+$font-color-rw-chart-dialog-header-dark:#fff;
+$font-color-rw-chart-dialog-header-light:#333;
+$font-color-rw-dialog-title-dark:#5598dc;
+$font-color-rw-dialog-title-light:#5598dc;
+$font-color-rw-dialog-close-light:#666;
+//.v-modal
+$background-color-v-modalheader-dark:rgba(150, 156, 167, 0.52);
+$background-color-v-modalheader-light:rgba(150, 156, 167, 0.52);
+// 调研页面 弹窗
+$font-color-page-research-question-dark:#5598dc;
+$font-color-page-research-question-light:#5598dc;
+$font-color-page-research-answer-dark:#9ba1b4;
+$font-color-page-research-answer-light:#666;
+$font-color-page-research-title-dark:#eee;
+$font-color-page-research-title-light:#969CA7;
+//autocomplete
+$background-color-autocomplete-dark:#282b35;
+$background-color-autocomplete-light:#fff;
+$background-color-autocomplete-hover-dark:#585c6c;
+$background-color-autocomplete-hover-light:#5598DC;
+$border-color-autocomplete-dark:#14161c;
+$border-color-autocomplete-light:#DADDE3;
+$font-color-autocomplete-dark:#9297ab;
+$font-color-autocomplete-light:#363A46;
+$font-color-autocomplete-hover-dark:#fff;
+$font-color-autocomplete-hover-light:#5598DC;
+//messagebox
+$background-color-message-header-dark:#282b35;
+$background-color-message-header-light:#e5e5e5;
+$background-color-message-body-dark:#3a3e49;
+$background-color-message-btn-dark:#cc4c3f;
+$font-color-message-dark:#fff;
+//财经新闻
+$font-color-finance-type:#fff;
+$font-color-finance-hover:#5598dc;
+$background-color-finance-type-pos:#ca4941;
+$background-color-finance-type-neg:#56a870;
+$background-color-finance-type-neu:#f2830d;
+$background-color-finance-dark:#1d1e23;
+$background-color-finance-light:#fff;
+$border-color-finance-dark:#000;
+$border-color-finance-light:#dadde3;
+$font-color-finance-title-dark:#caced7;
+$font-color-finance-title-light:#333;
+$font-color-finance-content-dark:#808ba1;
+$font-color-finance-content-light:#5d5d5d;
+$font-color-finance-time-dark:#caced7;
+$font-color-finance-time-light:#333;
+$font-color-finance-source-dark:#666;
+$font-color-finance-source-light:#999;
+$font-color-finance-loading-dark:#3a3e49;
+$font-color-finance-loading-light:#999;
+//导出
+$font-color-export-dark:#B7BDCD;
+$font-color-export-hover-dark:#5598dc;
+$font-color-export-light:#666;
+$font-color-export-hover-light:#5598dc;
+//特殊色值
+$font-color-red-dark:#ff3e3e;
+$font-color-red-light:#ff3e3e;
+$font-color-green-dark:#3eff7a;
+$font-color-green-light:#09C94D;
+$font-color-yellow-dark:#faa64b;
+$font-color-yellow-light:#fea74d;
+//新股中心
+$background-color-current-dark:#4c5870;
+$background-color-ipo-done-dark:#5dace7;
+$background-color-ipo-ing-dark:#ea756a;
+$background-color-ipo-will-dark:#4c4f58;

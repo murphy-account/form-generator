@@ -6,6 +6,10 @@ import '@/icons'
 import axios from 'axios'
 import Tinymce from '@/components/tinymce/index.vue'
 import test from '@/components/test/index.vue'
+import RwCardTitle from '@/components/RwCardTitle/index.vue'
+import RWEchart from '@/components/RWEchart/index.vue'
+Vue.component('RWEchart', RWEchart)
+Vue.component('RwCardTitle', RwCardTitle)
 Vue.component('test', test)
 Vue.component('tinymce', Tinymce)
 

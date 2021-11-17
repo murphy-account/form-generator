@@ -3,9 +3,12 @@ import { loadScriptQueue } from '@/utils/loadScript'
 import axios from 'axios'
 import Tinymce from '@/components/tinymce/index.vue'
 import test from '@/components/tinymce/index.vue'
-
+import RwCardTitle from '@/components/RwCardTitle/index.vue'
+import RWEchart from '@/components/RWEchart/index.vue'
+Vue.component('RWEchart', RWEchart)
 Vue.component('tinymce', Tinymce)
 Vue.component('test', test)
+Vue.component('RwCardTitle', RwCardTitle)
 Vue.prototype.$axios = axios
 
 const $previewApp = document.getElementById('previewApp')

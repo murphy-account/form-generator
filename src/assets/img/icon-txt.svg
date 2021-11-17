@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#DF6160;}
+	.st2{fill:#226E44;}
+	.st3{fill:#1D57A7;}
+	.st4{fill:none;}
+	.st5{fill:#819191;}
+	.st6{clip-path:url(#SVGID_2_);fill:#1AA69E;}
+	.st7{clip-path:url(#SVGID_2_);fill:#54B0DF;}
+	.st8{fill:#11A196;}
+</style>
+<polygon class="st0" points="6.2,2 6.2,23.9 23.9,23.9 23.9,7.5 18.1,2 "/>
+<path class="st5" d="M19.7,0H4v7.3h2.2V2h11.9v5.5h5.9v16.5H6.2v-6.1H4V26h22V5.7L19.7,0z M19.7,0"/>
+<path class="st5" d="M17.6,10.3h4v1.9h-4V10.3z M17.6,15h4v1.9h-4V15z M17.6,19.5h4v1.9h-4V19.5z M17.6,19.5"/>
+<g>
+	<defs>
+		<rect id="SVGID_1_" x="0" y="0" width="26" height="26"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<path class="st6" d="M6.2,21.4h9.2V10h-2.2v9.5h-7V21.4z M6.2,21.4"/>
+	<path class="st7" d="M11.4,17.8V7.3H0v10.5H11.4z M3.9,16.3H2.1V8.8h1.9v4.7l1.9-1.7l1.9,1.7V8.9h1.9v7.4H7.6l-1.9-1.7L3.9,16.3
+		L3.9,16.3z M3.9,16.3"/>
+	<rect x="0" y="7.3" class="st6" width="11.3" height="10.5"/>
+</g>
+<path class="st0" d="M9.2,10.8H6.6v5.9h-2v-5.9H2V8.9h7.2V10.8z M9.2,10.8"/>
+</svg>
